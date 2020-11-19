@@ -1,0 +1,25 @@
+<div style="background-color: lightgray;">
+    <form [formGroup] = "form" style="text-align:left;margin-top:50px;padding:20px;" (ngSubmit)="onSubmit(form.value)">
+        <p>
+            <label>Prénom : </label><br>
+            <input type="text" name="prenom" formControlName = "prenom">
+        </p>
+        <p>
+            <label>Nom : </label><br>
+            <input type="text"name="nom" formControlName = "nom">
+        </p>
+        <p>
+            <label>Email : </label><br>
+            <input type="text" name="email" formControlName = "email">
+        </p>
+        <p>
+            <label>Age : </label><br>
+            <input type="number" name="nom" formControlName = "age">
+        </p>
+        <p>
+            <label>Message : </label><br>
+            <textarea type="text" name="message" formControlName = "message"></textarea>
+        </p>
+        <button type="submit" [disabled] = "!form.valid" >Submit</button>
+    </form>
+</div>
