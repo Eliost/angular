@@ -8,7 +8,9 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AuthComponent } from './auth/auth.component';
+import { PageInfosComponent } from './page-infos/page-infos.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,15 @@ import { ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     FooterComponent,
     PortfolioComponent,
-    ContactComponent
+    ContactComponent,
+    AuthComponent,
+    PageInfosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

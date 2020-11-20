@@ -11,6 +11,7 @@
   },
   "private": true,
   "dependencies": {
+    "-": "0.0.1",
     "@angular/animations": "~11.0.0",
     "@angular/common": "~11.0.0",
     "@angular/compiler": "~11.0.0",
@@ -20,6 +21,8 @@
     "@angular/platform-browser-dynamic": "~11.0.0",
     "@angular/router": "~11.0.0",
     "firebase": "^8.0.2",
+    "firebase-tools": "^8.16.2",
+    "g": "^2.0.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "uikit": "^3.5.9",

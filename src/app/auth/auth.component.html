@@ -1,0 +1,17 @@
+<div class="w3-center" style="margin:auto;width:300px;margin-top:50px;border:2px solid blue">
+    <h2 style="color: blue;">Authentification</h2>
+    <form (ngSubmit) = "isAuth()">
+        <p style="color:blue;">
+            Identifiant:<br>
+            <input [(ngModel)] = "login" type="text" name="login" required>
+        </p>
+        <p style="color:blue;">
+            Mot de passe:<br>
+            <input [(ngModel)] = "password" type="password" name="password" required>
+        </p>
+        <p>
+            <button class="w3-button w3-blue-grey" type="submit">Connexion</button>
+        </p>
+            <div [hidden] = "error">Mauvais identifiants !</div>
+    </form>
+</div>

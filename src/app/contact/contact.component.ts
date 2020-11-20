@@ -8,6 +8,13 @@ import { FormControl,FormGroup, Validators } from '@angular/forms';
 })
 export class ContactComponent implements OnInit {
 
+  modalShow = false;
+  prenom:string;
+  nom:string;
+  age:number;
+  email:any;
+  message:string;
+
   form = new FormGroup({
     prenom: new FormControl('',Validators.required),
     nom: new FormControl('',Validators.required),
@@ -22,5 +29,13 @@ export class ContactComponent implements OnInit {
   }
   onSubmit(values:any):void{
     console.log(values);
+  }
+  onShowModal(values:any):void{
+    this.modalShow = !this.modalShow;
+    this.prenom = values.prenom;
+    this.nom = values.nom;
+    this.email = values.email;
+    this.age = values.age;
+    this.message = values.message;
   }
 }

@@ -1,25 +1,41 @@
-<div style="background-color: lightgray;">
-    <form [formGroup] = "form" style="text-align:left;margin-top:50px;padding:20px;" (ngSubmit)="onSubmit(form.value)">
+<div style="margin-top:50px;">
+    <h1 style="padding-left:20px;">Contactez-nous !</h1>
+    <form [formGroup] = "form" class="w3-container" style="padding-left:20px;" (ngSubmit)="onSubmit(form.value)">
         <p>
-            <label>Prénom : </label><br>
-            <input type="text" name="prenom" formControlName = "prenom">
+            <label class="w3-text-blue">Prénom : </label><br>
+            <input type="text" class="w3-input w3-border" name="prenom" formControlName = "prenom">
         </p>
         <p>
-            <label>Nom : </label><br>
-            <input type="text"name="nom" formControlName = "nom">
+            <label class="w3-text-blue">Nom : </label><br>
+            <input type="text"name="nom" class="w3-input w3-border " formControlName = "nom">
         </p>
         <p>
-            <label>Email : </label><br>
-            <input type="text" name="email" formControlName = "email">
+            <label class="w3-text-blue">Email : </label><br>
+            <input type="text" name="email" class="w3-input w3-border " formControlName = "email">
         </p>
         <p>
-            <label>Age : </label><br>
-            <input type="number" name="nom" formControlName = "age">
+            <label class="w3-text-blue">Age : </label><br>
+            <input type="number" name="age" class="w3-input  w3-border" formControlName = "age">
         </p>
         <p>
-            <label>Message : </label><br>
-            <textarea type="text" name="message" formControlName = "message"></textarea>
+            <label class="w3-text-blue">Message : </label><br>
+            <textarea type="text" name="message" class="w3-textarea w3-border" formControlName = "message"></textarea>
         </p>
-        <button type="submit" [disabled] = "!form.valid" >Submit</button>
+        <button class="w3-button w3-blue-grey" (click) = "onShowModal(form.value)" type="submit" [disabled] = "!form.valid" >Submit</button>
     </form>
 </div>
+<div class="w3-modal w3-hide w3-black" [ngClass]="{'w3-show': modalShow}" (click)="onShowModal(form.value)">
+    <span class="w3-button w3-large w3-display-topright"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-center w3-black w3-animate-zoom w3-display-topcenter">
+      <h1>Vos données ont bien été enregistrées !! </h1>
+      <div style="color:blue">
+        <p>Votre prénom : {{prenom}}</p>
+        <p>Votre nom : {{nom}}</p>
+        <p>Votre email : {{email}}</p>
+        <p>Votre age : {{age}}</p>
+        <p>Votre message : {{message}}</p>
+      </div>
+      <h1>Merci d'avoir participé !</h1>
+      
+    </div>
+  </div>
