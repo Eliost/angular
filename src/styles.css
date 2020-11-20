@@ -11,11 +11,11 @@ body, h1, h2, h3, h4, h5, h6 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 400px;
+  min-height: 600px;
 }
 .bgimg1{
-  background-image: url('assets/new-york-2699520_640.jpg');
+  background-image: url('assets/edf.jpeg');
 }
 .bgimg2{
-  background-image: url('assets/taxi-cab-381233_640.jpg');
+  background-image: url('assets/fond-ecran-stade.jpg');
 }

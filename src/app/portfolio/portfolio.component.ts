@@ -19,62 +19,62 @@ export class PortfolioComponent implements OnInit {
   portfolio = [
     {
       id: 0,
-      title: 'Montain',
-      src: 'mountain-landscape-2031539',
-      alt: 'Beautyfull Path'
+      title: 'FRANCE',
+      src: 'logo-france',
+      alt: 'EDF'
     },
     {
       id: 1,
-      title: 'Road 1',
-      src: 'road-220058_640',
-      alt: 'Road of the City'
+      title: 'ESPAGNE',
+      src: 'logo-espagne',
+      alt: ''
     },
     {
       id: 2,
-      title: 'Road 2',
-      src: 'the-road-815297',
-      alt: 'Road Undefined'
+      title: 'ITALIE',
+      src: 'logo-italia',
+      alt: 'Squadra Azurra'
     },
     {
       id: 3,
-      title: 'Road 3',
-      src: 'road-1072823',
-      alt: 'More Road...'
+      title: 'BELGIQUE',
+      src: 'logo-belgique',
+      alt: 'Le seum incarné'
     },
     {
       id: 4,
-      title: 'Action',
-      src: 'action-1838330_1280',
-      alt: 'Falling Action'
+      title: 'BRESIL',
+      src: 'bresil',
+      alt: ''
     },
     {
       id: 5,
-      title: 'Beard',
-      src: 'beard-1845166_1280',
-      alt: 'Long Beard'
+      title: 'Argentine',
+      src: 'logo-argentine',
+      alt: ''
     },
     {
       id: 6,
-      title: 'Hair',
-      src: 'beautiful-2405131_1920',
-      alt: 'Hair Wind'
+      title: 'Allemagne',
+      src: 'logo-allemagne',
+      alt: ''
     },
     {
       id: 7,
-      title: 'Building',
-      src: 'building-102840',
-      alt: 'Some Pyramid...'
+      title: 'Angleterre',
+      src: 'logo-angleterre',
+      alt: ''
     },
     {
       id: 8,
-      title: 'Drink',
-      src: 'drink-84533_1920',
-      alt: 'Feeling Good'
+      title: 'Mexique',
+      src: 'logo-mexique',
+      alt: ''
     },
     { id: 9,
-      title: 'Fish',
-      src: 'fish-3322230_1920',
-      alt: 'Under Water'
+      title: 'Croatie',
+      src: 'logo-croatie',
+      alt: ''
     }
   ];
 

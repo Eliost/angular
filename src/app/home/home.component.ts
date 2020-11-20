@@ -8,32 +8,32 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   team = [
-    {icon: 'avatar3',
-    firstname: 'Mike',
-    lastname: 'Scott',
-    status: 'Web Designer'
+    {icon: 'paul-pogba',
+    firstname: 'Paul',
+    lastname: 'Pogba',
+    status: 'Manchester United'
     },
-    {icon: 'avatar3',
-    firstname: 'Marie',
-    lastname: 'Peterson',
-    status: 'Developer'
+    {icon: 'kante',
+    firstname: "N'golo",
+    lastname: 'kante',
+    status: 'Chelsea FC'
     },
-    {icon: 'avatar6',
-    firstname: 'Jill',
-    lastname: 'Scott',
-    status: 'IT Manager'
-    },
-    {
-    icon: 'avatar4',
-    firstname: 'Bob',
-    lastname: 'Leepong',
-    status: 'Admin System'
+    {icon: 'antoine-griezmann',
+    firstname: 'Antoine',
+    lastname: 'Griezmann',
+    status: 'FC Barcelone'
     },
     {
-      icon: 'avatar1',
-      firstname: 'Dider',
-      lastname: 'Dupont',
-      status: 'President'
+    icon: 'cr7',
+    firstname: 'Cristiano',
+    lastname: 'Ronaldo',
+    status: 'Real Madrid'
+    },
+    {
+      icon: 'mbappe',
+      firstname: 'Kylian',
+      lastname: 'Mbappé',
+      status: 'President des français'
     }
   ];
 
