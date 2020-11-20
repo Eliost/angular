@@ -11,6 +11,8 @@ import { ContactComponent } from './contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthComponent } from './auth/auth.component';
 import { PageInfosComponent } from './page-infos/page-infos.component';
+import { CartComponent } from './cart/cart.component';
+import { ShopComponent } from './shop/shop.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { PageInfosComponent } from './page-infos/page-infos.component';
     PortfolioComponent,
     ContactComponent,
     AuthComponent,
-    PageInfosComponent
+    PageInfosComponent,
+    CartComponent,
+    ShopComponent
   ],
   imports: [
     BrowserModule,
