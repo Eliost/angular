@@ -1,5 +1,7 @@
+
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { CartService } from '../services/cart.service';
 
 @Component({
   selector: 'app-shop',
@@ -9,14 +11,16 @@ import { Router } from '@angular/router';
 export class ShopComponent implements OnInit {
 
   modal = false;
+  ButtonCommand = false;
   modalMaillotId: any;
   modalMaillotSrc: string;
   modalMaillotTitle: string;
   modalMaillotPrice: string;
-
+  params:any;
   nbItems = 4;
 
-  constructor(private router:Router) { }
+  constructor(public cartService: CartService) { }
+
   shop = [
   {
     id: 0,
@@ -68,22 +72,26 @@ export class ShopComponent implements OnInit {
   }
   ];
   array = [];
-
   ngOnInit(): void {
     
     for (let i = 0; i < this.shop.length; i += this.nbItems){
       this.array.push( this.shop.slice(i, i + this.nbItems) );
     }
-    console.log( this.array );
+    //console.log( this.array );
   }
-  onModalMaillot(id = 0):void{
+  onModalMaillot(id=0):void{
     this.modal = !this.modal;
     this.modalMaillotId = this.shop[id];
     this.modalMaillotSrc = this.shop[id].src;
     this.modalMaillotTitle = this.shop[id].title;
     this.modalMaillotPrice = this.shop[id].price;
+    this.params = [{src:this.modalMaillotSrc, title:this.modalMaillotTitle, price: this.modalMaillotPrice}];
+    this.cartService.onModalMaillot(this.params);
+
   }
-  onButtonCard(modalMaillotId):void{
-    this.router.navigateByUrl('cart');
+  onButtonCard():void{
+    this.cartService.onButtonCard();
+  /*  this.ButtonCommand = true;
+    this.router.navigateByUrl('cart');*/
   }
 }

@@ -19,6 +19,9 @@
         <img class="w3-image" src="assets/{{modalMaillotSrc}}.jpg">
         <h2>{{modalMaillotTitle}}</h2> 
         <p>{{modalMaillotPrice}}</p>
-        <button (click) ="onButtonCard(modalMaillotId)"class="w3-button w3-round-large w3-blue">Commander</button>
+        <button (click) ="onButtonCard()"class="w3-button w3-round-large w3-blue">Commander</button>
+        <div *ngIf="ButtonCommand === true" >
+        <!--  <app-cart [hidden] = "true" [params] = "params"></app-cart>-->
+        </div>
     </div>
   </div>
